@@ -4,15 +4,54 @@
   <title>My First HTML Page</title>
 
   <style>
+  /* Universal Selector */
+    *{
+      margin: 5px;
+      padding: 2px;
+      box-sizing: border-box;
+    }
+   /* Tag Selector */
     h1{
       font-size: 36;
       text-align: center;
       color: blue;
-
     }
+    p{
+      font-size: 14px;
+      text-align: justify;
+      color: black;
+    }
+  /* Pseudo-class Selector */
+  a:hover{
+    color: black;
+  }
+
+  /* Table Selector */
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td,
+  th,
+  tr{
+    border: 1px solid black;
+    padding: 4px;
+  }
+  .test{
+    display: flex;
+    width: 50%
+    background-color: orange; 
+  }
+  .test p{
+    color: aqua;
+    text-align: right;
+    font-size: 10px;
+  }
+  </style>
 </head>
 <body>
-  <h1>Welcome to my web page<h1>
+  <h1>Welcome to my web page</h1>
   <p>This is a <br>
      sample paragraph.</p>
   <ul>
@@ -38,5 +77,12 @@
       <td>Row 2 column 2</td>
     </tr>
   </table>
+
+  <div class="test">
+
+      <p>
+      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+    </p>
+
   </body>
 </html>
